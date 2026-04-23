@@ -1,0 +1,434 @@
+:root{
+    --primary-color: rgb(0, 12, 119);
+    --secondary-color: rgb(16, 120, 255);
+    --third-color: rgb(0, 255, 255);
+}
+
+*{
+    font-family: "Rubik", sans-serif;
+}
+
+section{
+    min-height: 100vh;
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 63px;
+    box-shadow: 0px 4px 4px 0px #00000025;
+}
+
+a{
+    color: rgb(33, 95, 146);
+    text-decoration: none;
+}
+
+.title{
+    color: var(--third-color);
+    font-size: 3.8rem;
+    text-transform: uppercase;
+}
+
+#cod{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+}
+
+#navBarLinks{
+   display: flex;
+
+   li{
+    padding-left: 73px;
+   }
+
+   li:last-child{
+    font-weight: bold;
+   }
+}
+
+#homeSection{
+    background-color: var(--primary-color);
+    padding-top: 65px;
+    display: flex;
+    justify-content: space-between;
+
+    #photoHome{
+        width: 40vw;
+        height: 100vh -65px;
+        background-image: url("assets/photo/programa.jpeg");
+        background-size: cover;
+        background-position: center ;
+    }
+
+    #homeText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+    }
+
+    h2{
+        color: white;
+        font-weight: 400;
+        font-size: 2.4rem;
+        padding: 24px 0 24px 0;
+    }
+}
+
+#aboutSection{
+    background-color: var(--secondary-color);
+    display: flex;
+
+    #aboutMeTextContainer{
+        padding-top: 65px;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #aboutMeFlex{
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            width: 80%;
+        }    
+    }
+
+    #aboutMePhoto{
+        background-image: url("assets/photo/corpo\ todo.jpeg");
+        width: 40vw;
+        background-size: cover;
+        background-position: center -130px;
+    }
+
+    p{
+        font-size: 1.75rem;
+        color: white;
+        padding: 45px 0 56px 0;
+    }
+}
+
+#Projects{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#projectTitle{
+    padding-top: 250px;
+    margin-left: 120px;
+    padding-bottom: 30px;
+}
+
+#projectBoxContainer{
+    display: flex;  
+    margin-left: 120px;
+
+    .projectBox{
+        background-color: aqua;
+        height: 450px;
+        width: 450px;
+        border-radius: 8px;
+        margin: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+    
+        p{
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 220px;
+    
+            .gitButton{
+                background-color: rgb(0, 0, 0);
+       
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+#skillSection{
+    background-image: url(assets/photo/800x600_1.png);
+    background-size: cover;
+
+    .overlay{
+        height: 100vh;
+        width: 100%;
+        background-color: #ffffffb9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            color: var(--secondary-color);
+            padding-top: 50px;
+            
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            gap: 27px;
+            padding-top: 164px;
+            padding-bottom: 164px;
+        }
+
+        li{
+           background-color: #0000005e;
+           padding: 12px 17px;
+           border-radius: 8px;
+           color: white;
+           font-size: 1.93rem; 
+        }
+    }
+}
+
+#contactSection{
+    background-color: var(--secondary-color);
+    display: flex;
+
+    #contactTextContainer{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            padding-bottom: 60px;
+            text-decoration: none;
+        }
+
+        p{
+            color: white;
+            font-size: 1.56rem;
+        }
+
+        #contactTextChild{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 800px;
+        }
+    }
+
+    #contactPhoto{
+        background-image: url(assets/photo/ia.jpeg);
+        width: 40vw;
+        max-width: 800px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.defaultButton{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 10px 14px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+
+    img{
+        width: 25px;
+        height: 25px;
+    }
+
+    a{
+        padding-left: 11px;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+.dowloadButtonLight{
+    background-color: var(--secondary-color);
+}
+
+.linkedinButtom{
+    background-color: aqua;
+
+    img{
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.gitButton{
+    background-color: rgb(104, 106, 212);
+    margin-left: 150px;
+}
+
+.dowloadButtonDark{
+    background-color: var(--secondary-color);
+}
+
+.emailAndPhone{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    font-style: normal;
+
+    .contactItem{
+        display: flex;
+        padding-top: 12px;
+
+        p{
+            padding-left: 14px;
+        }
+
+        .emailIcon{
+            width: 28px;
+        }
+    }
+}
+
+.socialMediaItem{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+
+    a{
+        background-color: var(--third-color);
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    img{
+        height: 28px;
+    }
+}
+
+
+@media (orientation: portrait){
+    .title{
+        font-size: 2.6rem;
+    }
+
+    #homeSection{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h2{
+            font-size: 1.71rem;
+        }
+    
+        #photoHome{
+            height: 30vh;
+            width: 30vh;
+            border-radius: 50%;
+            margin-bottom: 3.8rem;
+           background-size: cover;
+           background-position: center;
+        }
+
+        #homeContent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+        #aboutMePhoto{
+            display: none;
+        }
+
+        #aboutSection{
+            #aboutMeTextContainer{
+                width: 100vw;
+            
+                #aboutMeFlex{
+                align-items: center;
+                }    
+            }
+        }
+
+
+       #Projects {
+        padding: 20px;
+       }
+       
+        #projectTitle {
+        margin-left: 0;
+        padding-top: 80px;
+        text-align: left;
+        }
+
+        #projectBoxContainer {
+        overflow-x: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+        }
+
+        .projectBox {
+        min-width: 280px;
+        max-width: 80%;
+        height: 380px;
+        }
+
+
+        #contactSection{
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            padding: 3.5rem 0;
+
+            h1{
+                text-align: center;
+            }
+
+            #contactTextChild{
+                align-items: center;
+            }
+
+            #contactTextContainer{
+                width: 100vw;
+            }
+
+            #contactPhoto{
+                height: 30vh;
+                width: 30vh;
+                border-radius: 50%;
+                margin-bottom: 1.8rem;
+            }
+
+            p{
+                text-align: justify;
+            }
+
+            .contactItem:last-child{
+                text-align: start;
+                img{
+                    width: 1.75rem;
+                    height: 1.75rem;
+                }
+            }
+        }
+}
+
+@media (max-width: 750px){
+    nav{
+        display: none;
+    }
+}
