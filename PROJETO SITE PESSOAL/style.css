@@ -1,0 +1,352 @@
+:root{
+    --primary-color: white; 
+    --secundary-color: #33023b; 
+    --border-radius-base: 8px;
+   
+}
+
+*{
+  font-family: "Rubik", sans-serif;
+}
+
+section{
+    min-height: 100vh;
+}
+
+nav{
+  background-color: #f7f7f7;
+  display: flex;
+  width: 100vw;
+  position: fixed;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 14px 63px;
+  box-shadow: 0px 4px 4px 0px #00000025;
+
+  a{
+    color: #1b031f;
+    text-decoration: none;
+  }
+}
+
+.title{
+    color: var(--primary-color);
+    font-size: 3.8rem;
+    text-transform: uppercase;
+}
+
+#Coffe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+}
+
+#navBarLinks{
+    display: flex;
+
+    li{
+      padding-left: 73px;  
+    }
+
+    li:last-child{
+        font-weight: bold;
+    }
+}
+
+#homeSection{
+    background-color: #1b031f;
+    padding-top: 65px;
+    display: flex;
+    justify-content: space-between;
+
+
+    #photoHome{
+    width: 40vw;
+    height: 100vh - 65px;
+    background-image: url("assets/photo/larissa.png");
+    background-size: cover;
+    background-position: center;
+    }
+
+    #homeTexts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+    }    
+
+    h2{
+        color: #b6b6b6;
+        font-weight: 400;
+        font-size: 2.4rem;
+        padding: 24px 0 24px 0;
+    }
+    
+}
+
+#aboutSection{
+    background-color: var(--secundary-color);
+    display: flex;
+
+    #aboutMeTextFlexContainer{
+        padding-top: 65px;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #aboutMeFlexItem{
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            width: 80%;
+        }
+    }
+
+    #aboutMePhoto{
+        background-image: url("assets/photo/forma.jpeg");
+        width: 40vw;
+        background-size: cover;
+    }
+
+    p{
+        font-size: 1.75rem;
+        color: var(--primary-color);
+        /* line-height: 2.3rem; */
+        padding: 45px 0 56px 0;
+    }
+}
+
+#skillSection{
+    background-image: url("assets/photo/section_skills.png");
+    background-size: cover;
+
+    .overlay{
+        height: 100vh;
+        width: 100%;
+        background-color: #ffffff70;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            color: var(--secundary-color);
+            padding-bottom: 68px;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            gap: 27px;
+            padding-bottom: 164px;
+        }
+
+        li{
+            background-color: #00000039;
+            padding: 12px 17px;
+            border-radius: var(--border-radius-base);
+            color: var(--primary-color);
+            font-size: 1.93rem;
+        }
+    }
+}
+
+#contactSection{
+    background-color: #800294;
+    display: flex;
+
+    #contactTextsContainer{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+           padding-bottom: 60px; 
+           text-decoration: underline;
+        }
+
+        
+        p{
+            color: white; 
+            font-size: 1.56rem; 
+        }
+
+        #contactTextsChild{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 800px;
+        }
+    }
+
+    #contactPhoto{
+        background-image: url("assets/photo/WhatsApp\ Image\ 2026-02-18\ at\ 22.56.21.jpeg");
+        width: 40vw;  
+        background-size: cover; 
+    }
+}
+
+.defaultButton{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 10px 14px;
+    color: white;
+    border-radius: var(--border-radius-base);
+    cursor: pointer;
+
+    
+    a{
+        padding-left: 11px;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.dowloadButtonLight{
+    background-color: #800294;
+}
+
+.linkedinButton{
+    background-color: #59355f;
+    padding: 14px;
+}
+
+.dowloadButtonDark{
+    background-color: #33023b;
+}
+
+.customLineHeight{
+    line-height: 2.4rem;
+
+}
+
+.emailAndPhone{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    font-style: normal;
+
+   .contactItem{
+    display: flex;
+    padding-top: 12px;
+
+    p{
+      padding-left: 14px;
+    }
+
+    .emailIcon{
+      width: 28px;
+        }
+    }
+}    
+
+.socialMediaItem{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+
+    a{
+        background-color: #a12db3;
+        padding: 12px;
+        border-radius: var(--border-radius-base);
+    }
+
+    img{
+        height: 28px;
+    }
+}
+
+
+@media (orientation: portrait){
+    .title{
+        font-size: 2.6rem;
+    }
+
+    #homeSection{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h2{
+            font-size: 1.71rem;
+        }
+
+        #photoHome{
+            height: 30vh;
+            width: 30vh;
+            border-radius: 50%;
+            margin-bottom: 3.8rem;
+        }
+
+        #homeContent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+        #aboutMePhoto{
+           display: none;
+        }
+
+        #aboutSection{
+            #aboutMeTextFlexContainer{
+                width: 100vw;
+
+                #aboutMeFlexItem{
+                  align-items: center; 
+                }
+            }
+        }
+        #contactSection{  
+            flex-direction: column-reverse; 
+            justify-content: center;
+            align-items: center;  
+            padding: 3.5rem 0; 
+            
+            h1{
+                text-align: center;
+            }
+
+            #contactTextsChild{
+                align-items: center; 
+            }
+            
+            #contactTextsContainer{
+                width: 100vw;
+            }
+            
+            #contactPhoto{
+                height: 30vh;
+                width: 30vh;
+                border-radius: 50%;
+                margin-bottom: 1.8rem;
+        }
+
+        p{
+           text-align: justify; 
+        }
+
+        .contactItem:last-child{
+            text-align: start;
+            img{
+                width: 1.75rem;
+                height: 1.75rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px){
+    nav{
+        display: none;
+    }
+    }

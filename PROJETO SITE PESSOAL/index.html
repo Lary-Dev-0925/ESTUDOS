@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Site de currículo pessoal de Larissa Cavalini, programadora Front-End inicial.">
+    <meta name="author" content="Lari Cavalini">
+    <meta name="keywords" content="programação, tecnologia, currículo, portfólio, site pessoal, html, css, javascript">
+    <meta name="robots" content="index, nofollow"> <!-- noindex/follow indexar apenas site e n os links -->
+    
+    <title>Larissa Cavalini - Curriculum</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <img id="Coffe" src="assets/icon/coffee.jpeg" alt="icone de cafe, logo da pagina"/>
+        <ul id="navBarLinks">
+            <li><a href="#aboutSection">About Me</a></li>
+            <li><a href="#skillSection">Skills</a></li>
+            <li><a href="#projectSection">Projects</a></li>
+            <li><a href="#contactSection">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="homeSection">
+        <div id="photoHome"></div>
+        <!-- <img src="assets/photo/larissa.png"> -->
+        <div id="homeTexts">
+            <div id="homeContent">
+                <h1 class="title">Larissa Cavalini</h1>
+                <h2>Dev Front-End</h2>
+                <div class="defaultButton dowloadButtonLight">
+                    <img src="assets/icon/download2.png" alt="icone para baixar curriculo">
+                    <a href="source/CV-RAD.pdf" download="CV-RAD.pdf">Dowload Curriculum</a>
+                </div>
+            </div>    
+        </div>    
+    </section>
+        
+    <section id="aboutSection">
+        <div id="aboutMeTextFlexContainer">
+            <div id="aboutMeFlexItem">
+                <h1 class="title">About Me</h1>
+                <p class="customLineHeight">Prazer! Sou Larissa, tenho 32 anos e moro no ABC Paulista (SP). Em 2026, estou em transição de carreira para me tornar Desenvolvedora Front-End. 
+                Escolhi a área de tecnologia pela flexibilidade e pelas possibilidades de estilo de vida que ela oferece, e o Front-End me conquistou por unir lógica e criatividade — 
+                adoro ver o design ganhar vida na tela e transformar código em experiência real. Tenho formação em Produção Multimídia, curso técnico em Publicidade e Propaganda e 
+                experiência em estúdios de aulas EAD, o que fortaleceu minha base em comunicação visual, design e conteúdo digital.</p>
+                <div class="defaultButton linkedinButton">
+                    <img src="assets/icon/arrow.png" alt="icone que direciona ao linkedin">
+                    <a href="https://www.linkedin.com/in/larissa-cavalini-a64944272/" target="_blank">Confira meu Linkedin</a>
+                </div>
+            </div>
+        </div>    
+        <div id="aboutMePhoto"></div>
+    </section>
+
+    <section id="skillSection">
+        <div class="overlay">
+            <h1 class="title">Skills</h1>
+            <ul>
+                <li>JavaScript</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>React</li>
+                <li>Inglês intermediário</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
+            <div class="defaultButton dowloadButtonDark">
+                <img src="assets/icon/download2.png" alt="icone para baixar curriculo">
+                <a href="source/CV-RAD.pdf" download="CV-RAD.pdf">Dowload Complete Curriculum</a>
+            </div>
+        </div>    
+    </section>
+
+
+    <section id="contactSection">
+        <div id="contactTextsContainer">
+            <div id="contactTextsChild">
+                <h1 class="title">Contact</h1>
+                <p class="customLineHeight">Gostaria de bater um papo comigo? 
+                Vou deixar todas as minhas formas de contato
+                e redes sociais, listadas abaixo.
+                </p>
+                <address class="emailAndPhone">
+                    <div class="contactItem">
+                        <img class="emailIcon" src="assets/icon/email.png" alt="icone email">
+                        <p>contato@email.com</p>
+                    </div>
+
+                    <div class="contactItem">
+                        <img src="assets/icon/whatsapp.png" alt="icone whatsapp">
+                        <p>+ 55 (00) 9 9999-9999</p>
+                    </div>
+                </address>
+
+                    <div class="socialMediaItem">
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><img src="assets/icon/linkedIn.png" alt="icone redireciona linkedin"></a>
+                        <a href="https://www.instagram.com/kahlissy?igsh=MWd2Zmpzc3kxaDBjbw==" target="_blank"><img src="assets/icon/instagram.png" alt="icone redireciona instagram"></a>
+                        <a><img src="assets/icon/github.png" alt="icone redireciona github></a>                
+                    </div>
+            </div>
+        </div>  
+        
+        <div id="contactPhoto"></div>
+    </section>
+
+</body>
+
+</html>
